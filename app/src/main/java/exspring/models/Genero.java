@@ -3,14 +3,14 @@ package exspring.models;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
-import javax.persistece.GeneratedValue;
-import javax.persistece.GenerationType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 @Entity
 @Table(name="generos")
 public class Genero {
     @Id
-    @GeneratedValue(strategy=GenerationType.Identiny)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String nome;
 
